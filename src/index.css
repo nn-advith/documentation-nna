@@ -49,18 +49,18 @@
 .main-container{
     width: 70%;
     display: flex;
-    /* margin-top: 100px; */
+
 }
 
 .sub-container{
-    width: 75%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     padding: 30px 10px;
 }
 
 .scscroll{
-    margin-left: 24.5%;
+    margin-left: 25%;
     z-index: 9;
 }
 
@@ -320,6 +320,8 @@
 
 .section-page{
     min-height: 600px;
+    font-size: 0.8rem;
+
 }
 
 /* footer */

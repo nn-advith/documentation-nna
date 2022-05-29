@@ -7,7 +7,8 @@ import {BsSunFill} from 'react-icons/bs';
 import { useDispatch,useSelector } from 'react-redux';
 import { switchDark } from '../redux/slice/darkSlice';
 import { setScroll } from '../redux/slice/scrollSlice';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import {changeScroll} from '../components/Reusable-functions/RSF'
 
 const Navbar = () => {
     const dark = useSelector((state) => state.dark.dark)
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <>
         <nav className={scroll? `nav sticky ${dark? 'dark' : 'light'}`: `nav ${dark? 'dark' : 'light'}`}>
-            <Link to='/' className='link header headlink'>
+            <Link to='/' className='link header headlink' onClick={()=> changeScroll()}>
                 <img src={dark?nna2:nna1} alt="header" className='navimage'/>
                 Documentation
             </Link>
